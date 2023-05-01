@@ -20,7 +20,7 @@ navToggleButton.addEventListener("click", () => {
 });
 
 if (matchMedia) {
-  const mq = window.matchMedia("(min-width: 576px)");
+  const mq = window.matchMedia("(min-width: 768px)");
   mq.addListener(WidthChange);
   WidthChange(mq);
 }

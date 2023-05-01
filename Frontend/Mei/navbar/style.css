@@ -121,7 +121,7 @@
 }
 
 /* Small */
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 768px) {
   .nav-toggle {
     display: none;
   }
