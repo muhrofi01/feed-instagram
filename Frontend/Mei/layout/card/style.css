@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.card-wrapper {
+  width: fit-content;
+  margin: auto;
+  padding: 50px 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.card {
+  width: 170px;
+  height: 170px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 20px;
+  box-shadow: 6px 6px 3px rgb(180, 180, 180, 0.5);
+}
+
+.card:hover {
+  background: linear-gradient();
+}
+
+.card .card-icon {
+  width: 80px;
+  margin: auto;
+  text-align: center;
+}
+
+.card:hover .card-icon {
+  opacity: 0.5;
+}
+
+.card .card-content {
+  overflow: hidden;
+  height: 0;
+}
+
+.card:hover .card-content {
+  height: 150px;
+  transition: 0.5s;
+}
+
+.card .card-content h5 {
+  margin: 10px 0 5px;
+  font-size: 20px;
+}
+
+.card .card-content p {
+  font-size: smaller;
+}
+
+@media only screen and (min-width: 576px) {
+  .card-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .card-wrapper {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
