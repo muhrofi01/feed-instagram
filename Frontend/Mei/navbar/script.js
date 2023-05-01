@@ -18,3 +18,17 @@ navToggleButton.addEventListener("click", () => {
 
   navToggleButton.classList.toggle("active");
 });
+
+if (matchMedia) {
+  const mq = window.matchMedia("(min-width: 576px)");
+  mq.addListener(WidthChange);
+  WidthChange(mq);
+}
+
+function WidthChange(mq) {
+  if (mq.matches) {
+    navigationOnSidebar.classList.remove("slide");
+    backgroundSidebar.style.display = "none";
+    navToggleButton.classList.remove("active");
+  }
+}
