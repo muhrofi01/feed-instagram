@@ -8,8 +8,9 @@
 
 /* Extra Small */
 .navbar {
-  height: 60px;
+  height: 50px;
   padding: 0 30px;
+  margin: 10px;
   position: fixed;
   left: 0;
   right: 0;
@@ -17,7 +18,9 @@
   justify-content: space-between;
   align-items: center;
   background-color: white;
-  box-shadow: 0 2px 10px rgb(180, 180, 180);
+  border: 1px solid rgb(180, 180, 180, 0.5);
+  box-shadow: 6px 6px 3px rgb(180, 180, 180);
+  border-radius: 10px;
 }
 
 .brand {
@@ -74,6 +77,7 @@
   background-color: white;
   transition: 0.5s;
   transform: translateX(200px);
+  border-radius: 10px 0 0 10px;
 }
 
 .nav.slide {
@@ -129,6 +133,7 @@
     position: static;
     transform: translateX(0px);
     transition: 0s;
+    border-radius: 0;
   }
 
   .nav-link {
