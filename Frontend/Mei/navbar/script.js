@@ -32,3 +32,4 @@ function WidthChange(mq) {
     navToggleButton.classList.remove("active");
   }
 }
+
