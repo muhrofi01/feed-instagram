@@ -7,6 +7,7 @@
   font-family: "Poppins", sans-serif;
 }
 
+/* Extra Small */
 .card-wrapper {
   width: fit-content;
   margin: auto;
@@ -64,12 +65,14 @@
   font-size: smaller;
 }
 
+/* Small */
 @media only screen and (min-width: 576px) {
   .card-wrapper {
     grid-template-columns: 1fr 1fr;
   }
 }
 
+/* Medium */
 @media only screen and (min-width: 768px) {
   .card-wrapper {
     grid-template-columns: 1fr 1fr 1fr 1fr;
