@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #e0e0e0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-media {
+  width: 30px;
+  height: 30px;
+  padding: 15px 15px;
+  display: grid;
+  place-items: center;
+  border-radius: 100%;
+  color: black;
+  background: #e0e0e0;
+  transition: 1s;
+}
+
+.social-media:hover {
+  box-shadow: 6px 6px 12px #bebebe, -6px -6px 12px #ffffff;
+}
